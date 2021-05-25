@@ -1,0 +1,95 @@
+body {
+    background-color: black;
+    color: white;
+    width:100%;
+  }
+  .jumbotron {
+    background-image: url('images/hero.png');
+    height: 70vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+  }
+  .navigation {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction:row;
+    width: 100%;
+  }
+  ul{
+    list-style-type:none;
+    margin:0 ;
+    padding: 0;
+    overflow:hidden;
+    background-color: black ;
+    }
+    li{
+      float: center;
+    }
+    li a {
+    display: block;
+    color:white;
+    text-align:center;
+    padding: 14px 16px;
+    text-decoration: none;
+    }
+    li a:hover {
+      background-color: black;
+    }
+  #myProjects {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .caseStudy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align:center;
+    margin: 15px;
+  }
+  
+
+  #About {
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    padding: 3%;
+  }
+  footer {
+    text-align: center;
+    background-color: #551D95;
+    color:white;
+  }
+ 
+ 
+  #myBtn {
+      display: none; 
+      position: fixed; 
+      bottom: 100px; 
+      right: 50px; 
+      z-index: 70; 
+      border: none; 
+      outline: none; 
+      background-color: black; 
+      color: ivory; 
+      cursor: pointer; 
+      padding: 15px; 
+      border-radius: 12px; 
+      font-size: 18px; 
+  }
+  
+  #myBtn:hover {
+    background-color: #551D95; 
+  }
+  @media only screen and (max-width: 600px) {
+    #myProjects {
+      flex-direction: column;
+    }
+    #mySkills {
+      flex-direction: column;
+    }
+  }
